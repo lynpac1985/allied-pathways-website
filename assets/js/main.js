@@ -202,6 +202,29 @@
       }
 
       if (summary) summary.classList.remove('is-visible');
+
+      if (form.hasAttribute('data-mailto-form')) {
+        var recipient = form.getAttribute('data-recipient') || '';
+        var lines = [];
+        fields.forEach(function (field) {
+          if (field.type === 'checkbox' || field.type === 'radio') return;
+          var wrap = field.closest('.field');
+          var label = wrap ? wrap.querySelector('label') : null;
+          var labelText = label ? label.textContent.replace('*', '').trim() : (field.name || 'Field');
+          lines.push(labelText + ': ' + field.value.trim());
+        });
+        form.querySelectorAll('input:not([required]), textarea:not([required])').forEach(function (field) {
+          if (field.type === 'checkbox' || field.value.trim() === '') return;
+          var wrap = field.closest('.field');
+          var label = wrap ? wrap.querySelector('label') : null;
+          var labelText = label ? label.textContent.replace('*', '').trim() : (field.name || 'Field');
+          lines.push(labelText + ': ' + field.value.trim());
+        });
+        var subject = 'New testimonial submission';
+        var body = lines.join('\n\n');
+        window.location.href = 'mailto:' + encodeURIComponent(recipient) + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      }
+
       form.style.display = 'none';
       if (successPanel) {
         successPanel.classList.add('is-visible');

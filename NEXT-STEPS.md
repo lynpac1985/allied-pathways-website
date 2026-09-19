@@ -28,7 +28,7 @@ Needed so the monthly automated site check-in (JSON-LD validity, title/descripti
 
 - [ ] Real photos for: Speech Pathologist, Registered Nurse, Occupational Therapist, Practice Manager (same treatment as Jack/Muhe)
 - [ ] Bios for the above 4 team members once photos/names are confirmed
-- [ ] Real client testimonials to replace the generic ones on the homepage (get written consent before publishing — ACCC treats published testimonials as genuine-customer claims)
+- [ ] Real client testimonials to replace the generic ones on the homepage (get written consent before publishing — ACCC treats published testimonials as genuine-customer claims). Collection is now set up: `testimonial.html` is a live submission form (opens a pre-filled email to info@alliedpathways.com.au), `assets/img/qr/testimonial-qr.png` is a printable QR code linking to it, and `TESTIMONIAL-REQUESTS.md` has ready-to-send outreach templates for clients, Support Coordinators, and GPs
 - [ ] Confirm scope/wording for the "Meal Delivery Company Audit" service section on services.html (currently marked placeholder copy)
 - [ ] At least 4–6 more blog posts (currently 1 real post)
 
