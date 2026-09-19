@@ -226,59 +226,46 @@
         </div>
       </div>
 
-      <div class="region-map mt-lg" style="max-width:900px;margin-inline:auto;">
-        <svg viewBox="0 0 880 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="regionMapTitle regionMapDesc">
+      <div class="region-map mt-lg" style="max-width:820px;margin-inline:auto;">
+        <svg viewBox="0 0 900 820" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="regionMapTitle regionMapDesc">
           <title id="regionMapTitle">Illustrative map of Allied Pathways' service regions</title>
-          <desc id="regionMapDesc">A stylised map showing five coverage regions around our Glen Waverley office: Northern Suburbs, Eastern Suburbs, Knox &amp; Outer East, South-Eastern Suburbs, and Western Suburbs.</desc>
+          <desc id="regionMapDesc">A stylised diagram showing five overlapping coverage regions around our Glen Waverley office: Northern Suburbs, Eastern Suburbs, Knox &amp; Outer East, South-Eastern Suburbs, and Western Suburbs.</desc>
 
-          <rect width="880" height="620" rx="24" fill="#F0F6E9"/>
+          <rect width="900" height="820" rx="24" fill="#F0F6E9"/>
 
-          <!-- Legend -->
-          <text x="20" y="46" font-family="Figtree, sans-serif" font-weight="700" font-size="13" letter-spacing="0.04em" fill="#518096">COVERAGE KEY</text>
-          <rect x="20" y="63" width="14" height="14" rx="3" fill="#042B4B"/>
-          <text x="42" y="74" font-family="Figtree, sans-serif" font-weight="600" font-size="13" fill="#042B4B">Northern Suburbs</text>
-          <rect x="20" y="97" width="14" height="14" rx="3" fill="#578A28"/>
-          <text x="42" y="108" font-family="Figtree, sans-serif" font-weight="600" font-size="13" fill="#042B4B">Eastern Suburbs</text>
-          <rect x="20" y="131" width="14" height="14" rx="3" fill="#518096"/>
-          <text x="42" y="142" font-family="Figtree, sans-serif" font-weight="600" font-size="13" fill="#042B4B">Knox &amp; Outer East</text>
-          <rect x="20" y="165" width="14" height="14" rx="3" fill="#0081A4"/>
-          <text x="42" y="176" font-family="Figtree, sans-serif" font-weight="600" font-size="13" fill="#042B4B">South-Eastern Suburbs</text>
-          <rect x="20" y="199" width="14" height="14" rx="3" fill="#8BB73D"/>
-          <text x="42" y="210" font-family="Figtree, sans-serif" font-weight="600" font-size="13" fill="#042B4B">Western Suburbs</text>
-
-          <!-- Map regions (adjoining, not to scale) -->
-          <path d="M560,320 L419,126 L560,60 L698,130 Z" fill="#042B4B" stroke="#F0F6E9" stroke-width="4" stroke-linejoin="round"/>
-          <path d="M560,320 L698,130 L817,237 L798,397 Z" fill="#578A28" stroke="#F0F6E9" stroke-width="4" stroke-linejoin="round"/>
-          <path d="M560,320 L798,397 L725,547 L560,560 Z" fill="#518096" stroke="#F0F6E9" stroke-width="4" stroke-linejoin="round"/>
-          <path d="M560,320 L560,560 L401,538 L341,391 Z" fill="#0081A4" stroke="#F0F6E9" stroke-width="4" stroke-linejoin="round"/>
-          <path d="M560,320 L341,391 L313,240 L419,126 Z" fill="#8BB73D" stroke="#F0F6E9" stroke-width="4" stroke-linejoin="round"/>
-
-          <!-- Region labels -->
-          <rect x="474" y="167" width="170" height="28" rx="14" fill="#ffffff"/>
-          <circle cx="492" cy="181" r="6" fill="#042B4B"/>
-          <text x="506" y="185" font-family="Figtree, sans-serif" font-weight="700" font-size="12" fill="#042B4B">Northern Suburbs</text>
-
-          <rect x="612" y="264" width="170" height="28" rx="14" fill="#ffffff"/>
-          <circle cx="630" cy="278" r="6" fill="#578A28"/>
-          <text x="644" y="282" font-family="Figtree, sans-serif" font-weight="700" font-size="12" fill="#042B4B">Eastern Suburbs</text>
-
-          <rect x="565" y="424" width="200" height="28" rx="14" fill="#ffffff"/>
-          <circle cx="583" cy="438" r="6" fill="#518096"/>
-          <text x="597" y="442" font-family="Figtree, sans-serif" font-weight="700" font-size="12" fill="#042B4B">Knox &amp; Outer East</text>
-
-          <rect x="353" y="421" width="210" height="28" rx="14" fill="#ffffff"/>
-          <circle cx="371" cy="435" r="6" fill="#0081A4"/>
-          <text x="385" y="439" font-family="Figtree, sans-serif" font-weight="700" font-size="12" fill="#042B4B">South-Eastern Suburbs</text>
-
-          <rect x="344" y="262" width="170" height="28" rx="14" fill="#ffffff"/>
-          <circle cx="362" cy="276" r="6" fill="#8BB73D"/>
-          <text x="376" y="280" font-family="Figtree, sans-serif" font-weight="700" font-size="12" fill="#042B4B">Western Suburbs</text>
+          <!-- Region blobs -->
+          <circle cx="450" cy="280" r="180" fill="#042B4B" opacity="0.45"/>
+          <circle cx="612" cy="398" r="180" fill="#578A28" opacity="0.45"/>
+          <circle cx="550" cy="588" r="180" fill="#518096" opacity="0.45"/>
+          <circle cx="350" cy="588" r="180" fill="#0081A4" opacity="0.45"/>
+          <circle cx="288" cy="398" r="180" fill="#8BB73D" opacity="0.45"/>
 
           <!-- Office marker -->
-          <circle cx="560" cy="320" r="24" fill="#ffffff" stroke="#042B4B" stroke-width="4"/>
-          <circle cx="560" cy="320" r="9" fill="#042B4B"/>
-          <rect x="478" y="352" width="164" height="28" rx="14" fill="#ffffff"/>
-          <text x="560" y="371" text-anchor="middle" font-family="Figtree, sans-serif" font-weight="700" font-size="12" fill="#042B4B">Glen Waverley Office</text>
+          <circle cx="450" cy="450" r="30" fill="#ffffff" stroke="#042B4B" stroke-width="4"/>
+          <circle cx="450" cy="450" r="10" fill="#042B4B"/>
+          <rect x="368" y="488" width="164" height="30" rx="15" fill="#ffffff"/>
+          <text x="450" y="508" text-anchor="middle" font-family="Figtree, sans-serif" font-weight="700" font-size="13" fill="#042B4B">Glen Waverley Office</text>
+
+          <!-- Region labels -->
+          <rect x="355" y="32" width="190" height="46" rx="23" fill="#ffffff"/>
+          <circle cx="378" cy="55" r="8" fill="#042B4B"/>
+          <text x="396" y="60" font-family="Figtree, sans-serif" font-weight="700" font-size="15" fill="#042B4B">Northern Suburbs</text>
+
+          <rect x="688" y="316" width="195" height="46" rx="23" fill="#ffffff"/>
+          <circle cx="710" cy="339" r="8" fill="#578A28"/>
+          <text x="728" y="344" font-family="Figtree, sans-serif" font-weight="700" font-size="15" fill="#042B4B">Eastern Suburbs</text>
+
+          <rect x="560" y="710" width="215" height="46" rx="23" fill="#ffffff"/>
+          <circle cx="582" cy="733" r="8" fill="#518096"/>
+          <text x="600" y="738" font-family="Figtree, sans-serif" font-weight="700" font-size="15" fill="#042B4B">Knox &amp; Outer East</text>
+
+          <rect x="140" y="710" width="220" height="46" rx="23" fill="#ffffff"/>
+          <circle cx="162" cy="733" r="8" fill="#0081A4"/>
+          <text x="180" y="738" font-family="Figtree, sans-serif" font-weight="700" font-size="15" fill="#042B4B">South-Eastern Suburbs</text>
+
+          <rect x="17" y="316" width="190" height="46" rx="23" fill="#ffffff"/>
+          <circle cx="39" cy="339" r="8" fill="#8BB73D"/>
+          <text x="57" y="344" font-family="Figtree, sans-serif" font-weight="700" font-size="15" fill="#042B4B">Western Suburbs</text>
         </svg>
         <p class="region-map-caption">Illustrative coverage regions, not to scale — plus telehealth appointments across Victoria.</p>
       </div>
