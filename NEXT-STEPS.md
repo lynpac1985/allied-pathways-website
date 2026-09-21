@@ -31,8 +31,8 @@ Needed so the monthly automated site check-in (structured data validity, title/d
 - [x] Real photo + bio for Muhe (Dietitian, Director & Practice Manager) — includes PEG feeding, sports dietetics, low-FODMAP/IBS specialties, Mandarin speaking
 - [x] Real photo + bio for Jack (Exercise Physiologist) — Mandarin speaking
 - [x] Real photo + bio for Jeina (Registered Nurse)
-- [ ] Real photos for: Speech Pathologist, Occupational Therapist (same treatment as the above three)
-- [ ] Bios for the above 2 team members once photos/names are confirmed
+- [x] Real photo + bio for Irene (Speech Pathologist)
+- [ ] Real photo + bio for Occupational Therapist (same treatment as the above four)
 - [ ] **Real client testimonials** — highest-priority remaining item. The three testimonials currently on the homepage are generic/fabricated, not from real clients. Collection is fully set up: `testimonial.html` is a live submission form at alliedpathways.com.au/testimonial.html (opens a pre-filled email to info@alliedpathways.com.au), `assets/img/qr/testimonial-qr.png` is a printable QR code linking to it, and `TESTIMONIAL-REQUESTS.md` has ready-to-send outreach templates for clients, Support Coordinators, and GPs. Just needs 2-3 real responses back.
 - [ ] Confirm scope/wording for the "Meal Delivery Company Audit" service section on services.html (currently marked placeholder copy)
 - [ ] At least 4-6 more blog posts (currently 1 real post)
