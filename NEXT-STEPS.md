@@ -49,8 +49,9 @@ Full report: [SEO-AUDIT-2026-09-25.md](SEO-AUDIT-2026-09-25.md). Scored **57/100
 - [x] Built a dedicated [Meal Delivery Company Audit](https://www.alliedpathways.com.au/meal-delivery-audit-melbourne.html) landing page (B2B-focused, expanded from one paragraph) plus a [separate enquiry form](https://www.alliedpathways.com.au/meal-delivery-audit-enquiry.html) instead of routing through the generic contact form
 - [x] Site-wide internal linking updated to point at all the new pages (homepage cards, every page's footer, services.html hub links)
 
+- [x] Built a [Melbourne suburbs landing page](https://www.alliedpathways.com.au/ndis-allied-health-melbourne-suburbs.html) — one consolidated page (not a separate URL per suburb, to avoid the thin-content risk of templating dozens of near-identical pages) giving real depth to the 19 densest/major suburbs already in `service-area.html`'s coverage area, grouped by region, with the remaining 16 honestly listed too. Linked from `service-area.html`.
+
 **Still open from the audit — needs your input, not something I can safely do myself:**
-- [ ] A Glen Waverley / suburb-specific local-SEO landing page (second-biggest lever after the discipline pages — 80% of local search results are suburb-specific pages)
 - [ ] Real surnames or AHPRA/professional-body registration numbers for the team, so credentials are independently verifiable
 - [ ] A real Privacy Policy and Feedback & Complaints page — both currently just link to the contact page; this is a legal document I shouldn't draft unreviewed
 - [ ] Outdated funding terminology check — I updated the obvious ones (CDM Plan, myplace), worth a periodic re-check as NDIS/Medicare rules change
