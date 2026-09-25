@@ -220,7 +220,7 @@
           var labelText = label ? label.textContent.replace('*', '').trim() : (field.name || 'Field');
           lines.push(labelText + ': ' + field.value.trim());
         });
-        var subject = 'New testimonial submission';
+        var subject = form.getAttribute('data-mailto-subject') || 'New website submission';
         var body = lines.join('\n\n');
         window.location.href = 'mailto:' + encodeURIComponent(recipient) + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
       }

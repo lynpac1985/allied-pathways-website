@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Share Your Experience | Allied Pathways</title>
-<meta name="description" content="Share your experience with Allied Pathways — your feedback helps other NDIS participants and families considering our services.">
+<title>Enquire About a Meal Delivery Audit | Allied Pathways</title>
+<meta name="description" content="Tell us about your menus and client base — our Dietitian will scope the right level of nutrition and compliance audit for your business.">
 <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,9 +45,9 @@
 
   <section class="page-hero">
     <div class="container">
-      <div class="breadcrumb"><a href="index.html">Home</a> / Share Your Experience</div>
-      <h1>Share Your Experience</h1>
-      <p>Whether you're a participant, family member, or Support Coordinator — we'd love to hear about your experience with Allied Pathways. Your feedback helps other families considering our services, and may be featured on our website (with your permission).</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> / <a href="meal-delivery-audit-melbourne.html">Meal Delivery Nutrition Audit</a> / Enquire</div>
+      <h1>Enquire About a Meal Delivery Audit</h1>
+      <p>Tell us a bit about your menus and the clients you serve, and our Dietitian will come back to you with the right scope and timeframe for an audit.</p>
     </div>
   </section>
 
@@ -68,47 +68,52 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
           </span>
           <h2>Almost done!</h2>
-          <p class="max-w-prose" style="margin-inline:auto;">Your email app should have opened with your testimonial ready to send. If it didn't open automatically, please email us directly at <a href="mailto:info@alliedpathways.com.au">info@alliedpathways.com.au</a> with your message.</p>
+          <p class="max-w-prose" style="margin-inline:auto;">Your email app should have opened with your enquiry ready to send. If it didn't open automatically, please email us directly at <a href="mailto:info@alliedpathways.com.au">info@alliedpathways.com.au</a> or call <a href="tel:+61425210636">0425 210 636</a>.</p>
         </div>
 
-        <form data-validate data-mailto-form data-recipient="info@alliedpathways.com.au" data-mailto-subject="New testimonial submission" novalidate>
+        <form data-validate data-mailto-form data-recipient="info@alliedpathways.com.au" data-mailto-subject="New meal delivery audit enquiry" novalidate>
           <div class="form-grid">
             <div class="field span-2">
-              <label for="t-name">Your name <span class="required">*</span></label>
-              <input type="text" id="t-name" name="t-name" required autocomplete="name">
+              <label for="m-company">Company / organisation name <span class="required">*</span></label>
+              <input type="text" id="m-company" name="m-company" required autocomplete="organization">
+              <span class="field-error"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Enter your company or organisation name</span>
+            </div>
+            <div class="field">
+              <label for="m-name">Your name <span class="required">*</span></label>
+              <input type="text" id="m-name" name="m-name" required autocomplete="name">
               <span class="field-error"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Enter your name</span>
             </div>
+            <div class="field">
+              <label for="m-role">Your role</label>
+              <input type="text" id="m-role" name="m-role" placeholder="e.g. Operations Manager" autocomplete="organization-title">
+            </div>
+            <div class="field">
+              <label for="m-email">Email address <span class="required">*</span></label>
+              <input type="email" id="m-email" name="m-email" required autocomplete="email">
+              <span class="field-error"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Enter a valid email address</span>
+            </div>
+            <div class="field">
+              <label for="m-phone">Phone number</label>
+              <input type="tel" id="m-phone" name="m-phone" autocomplete="tel">
+            </div>
             <div class="field span-2">
-              <label for="t-role">Your relationship to Allied Pathways <span class="required">*</span></label>
-              <select id="t-role" name="t-role" required>
+              <label for="m-clients">Who are your meals mainly for? <span class="required">*</span></label>
+              <select id="m-clients" name="m-clients" required>
                 <option value="">Select an option</option>
-                <option>NDIS participant</option>
-                <option>Family member / carer</option>
-                <option>Support at Home client</option>
-                <option>NDIS Support Coordinator</option>
-                <option>Referring GP or care partner</option>
-                <option>Other</option>
+                <option>NDIS participants</option>
+                <option>Aged care residents / Support at Home clients</option>
+                <option>Mixed NDIS &amp; aged care</option>
+                <option>General community / other</option>
               </select>
               <span class="field-error"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Select an option</span>
             </div>
             <div class="field span-2">
-              <label for="t-quote">Your testimonial <span class="required">*</span></label>
-              <textarea id="t-quote" name="t-quote" required placeholder="Tell us about your experience with Allied Pathways..."></textarea>
-              <span class="field-error"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Please share a few words about your experience</span>
-            </div>
-            <div class="field span-2">
-              <label for="t-credit">How should we credit you if published?</label>
-              <input type="text" id="t-credit" name="t-credit" placeholder="e.g. J.M., Parent of NDIS participant — or 'anonymous'">
-            </div>
-            <div class="field span-2">
-              <label class="checkbox-label">
-                <input type="checkbox" id="t-consent" name="t-consent" required>
-                I consent to Allied Pathways publishing this testimonial on their website and marketing materials, using the credit above. <span class="required">*</span>
-              </label>
-              <span class="field-error"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Please confirm consent to continue</span>
+              <label for="m-scope">What would you like the audit to cover? <span class="required">*</span></label>
+              <textarea id="m-scope" name="m-scope" required placeholder="e.g. number of menus/sites, texture-modified meals, allergen labelling, timeframe..."></textarea>
+              <span class="field-error"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Tell us a little about what you need</span>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary btn-lg btn-block">Send via Email</button>
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Send Enquiry via Email</button>
         </form>
       </div>
 
@@ -154,6 +159,7 @@
           <li><a href="service-area.html">Service Area</a></li>
           <li><a href="funding-guide.html">NDIS &amp; Funding</a></li>
           <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About Us</a></li>
         </ul>
       </nav>
 
