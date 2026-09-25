@@ -53,7 +53,7 @@ Full report: [SEO-AUDIT-2026-09-25.md](SEO-AUDIT-2026-09-25.md). Scored **57/100
 
 **Still open from the audit — needs your input, not something I can safely do myself:**
 - [ ] Real surnames or AHPRA/professional-body registration numbers for the team, so credentials are independently verifiable
-- [ ] A real Privacy Policy and Feedback & Complaints page — both currently just link to the contact page; this is a legal document I shouldn't draft unreviewed
+- [x] Built real [Privacy Policy](https://www.alliedpathways.com.au/privacy-policy.html) and [Feedback & Complaints](https://www.alliedpathways.com.au/feedback-complaints.html) pages (both previously just linked to the contact page). Drafted from known facts (ABN, NDIS Provider No., actual forms/services on-site) plus standard APP structure and NDIS/Aged Care Commission escalation paths — **recommend a lawyer's read-through before treating this as final**, particularly the data retention and complaints-handling specifics
 - [ ] Outdated funding terminology check — I updated the obvious ones (CDM Plan, myplace), worth a periodic re-check as NDIS/Medicare rules change
 
 ## Content — placeholders still to replace
