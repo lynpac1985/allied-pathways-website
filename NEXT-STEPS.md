@@ -8,10 +8,10 @@ A running checklist of things that need your input or action (not something I ca
 
 - [ ] **Flush the SiteGround cache.** Every fix and new page listed below is already correctly deployed to the server, but SiteGround's Dynamic Cache is still serving real visitors a stale, pre-2026-09-25 copy of several pages (confirmed via cache-busted requests — origin is correct, cache isn't). This needs your login: **Site Tools → Speed → Caching → Flush Cache**. I tried a `.htaccess` `Cache-Control` override to force this automatically — SiteGround's cache layer ignores it, so a manual flush is the only fix. Do this first; nothing else on this list matters to visitors until it's done.
 
-## GitHub — done
+## GitHub & automated check-in — done
 
 - [x] Repo created and pushed: [github.com/lynpac1985/allied-pathways-website](https://github.com/lynpac1985/allied-pathways-website), full history, `main` branch tracked. SSH key (`~/.ssh/github_allied_pathways`) configured for future pushes.
-- [ ] Ask Claude to finish setting up the monthly automated site check-in routine now that a repo URL exists
+- [x] **Weekly automated site health-check routine is live** (JSON-LD validity, title/description lengths, placeholder sweep, broken internal links, live-vs-repo drift check). Runs Monday mornings, emails the report to info@alliedpathways.com.au. Will switch to monthly once the content backlog below clears. [Routine link](https://claude.ai/code/routines/trig_01C13BfSg25ZbakbT8nrKnKQ)
 
 ## Going live
 
