@@ -67,7 +67,7 @@ Full report: [SEO-AUDIT-2026-09-25.md](SEO-AUDIT-2026-09-25.md). Scored **57/100
 
 - [ ] Real business opening hours (currently placeholder Mon-Fri 9am-5pm in the site's structured data)
 - [ ] Google Analytics 4 Measurement ID (`G-XXXXXXXXXX`) — not yet installed. Send the ID and it'll be wired in
-- [ ] Confirm/claim Google Business Profile (needed before adding review star ratings to the site, and it's the single biggest local-SEO ranking lever available) — walkthrough already provided
+- [ ] Google Business Profile — **set up, awaiting Google's verification** (postcard/phone/email). Once verified, send Claude the profile URL to add to the site's schema `sameAs`, and it becomes the biggest lever for real reviews/star ratings
 
 ## Ongoing cadence
 
