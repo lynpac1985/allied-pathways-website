@@ -72,7 +72,7 @@ Full reports: [SEO-AUDIT-2026-09-25.md](SEO-AUDIT-2026-09-25.md), [SEO-AUDIT-202
 - [x] Real photo + bio for Muhe, Jack, Jeina, Irene
 - [ ] Real photo + bio for Occupational Therapist (same treatment as the above four — the new OT landing page currently says "we're growing this team" rather than naming anyone)
 - [ ] **Real client testimonials** — still the highest-priority content gap now that the fake ones are removed. Collection is fully set up: `testimonial.html` is a live submission form, `assets/img/qr/testimonial-qr.png` is a printable QR code linking to it, and `TESTIMONIAL-REQUESTS.md` has ready-to-send outreach templates. Just needs 2-3 real responses back.
-- [ ] At least 4-6 more blog posts (currently 1 real post — the placeholder filler cards that used to pad this out have been removed rather than left misleading)
+- [x] Added 10 new blog posts (11 total now) covering the most-asked NDIS and Support at Home questions, sourced from real FAQ lists (Scope Australia, People with Disability Australia, Dept. of Health) rather than invented topics — [5 NDIS posts](blog-ndis-eligibility.html) and [5 Support at Home posts](blog-support-at-home-explained.html) all live at [blog.html](https://www.alliedpathways.com.au/blog.html)
 
 ## Business details to confirm
 
