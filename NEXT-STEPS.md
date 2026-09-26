@@ -8,17 +8,10 @@ A running checklist of things that need your input or action (not something I ca
 
 - [ ] **Flush the SiteGround cache.** Every fix and new page listed below is already correctly deployed to the server, but SiteGround's Dynamic Cache is still serving real visitors a stale, pre-2026-09-25 copy of several pages (confirmed via cache-busted requests — origin is correct, cache isn't). This needs your login: **Site Tools → Speed → Caching → Flush Cache**. I tried a `.htaccess` `Cache-Control` override to force this automatically — SiteGround's cache layer ignores it, so a manual flush is the only fix. Do this first; nothing else on this list matters to visitors until it's done.
 
-## Immediate — push the site to GitHub
+## GitHub — done
 
-Needed so the monthly automated site check-in can run — cloud agents can only see a git repo or a live URL, not your local machine. The repo is already initialised locally with full history (now well ahead of GitHub — a lot has landed since this was last flagged); it just isn't backed up to GitHub yet.
-
-- [ ] Create an empty repo at [github.com/new](https://github.com/new) (e.g. `allied-pathways-website`)
-- [ ] Run in Terminal, from the project folder:
-  ```bash
-  cd "/Users/lyndontolentino/Desktop/Allied Pathways" && git remote add origin PASTE_URL_HERE
-  git push -u origin main
-  ```
-- [ ] Tell Claude the repo URL once pushed
+- [x] Repo created and pushed: [github.com/lynpac1985/allied-pathways-website](https://github.com/lynpac1985/allied-pathways-website), full history, `main` branch tracked. SSH key (`~/.ssh/github_allied_pathways`) configured for future pushes.
+- [ ] Ask Claude to finish setting up the monthly automated site check-in routine now that a repo URL exists
 
 ## Going live
 
