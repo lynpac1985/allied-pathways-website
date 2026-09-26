@@ -69,6 +69,10 @@ Full report: [SEO-AUDIT-2026-09-25.md](SEO-AUDIT-2026-09-25.md). Scored **57/100
 - [ ] Google Analytics 4 Measurement ID (`G-XXXXXXXXXX`) — not yet installed. Send the ID and it'll be wired in
 - [ ] Google Business Profile — **set up, awaiting Google's verification** (postcard/phone/email). Once verified, send Claude the profile URL to add to the site's schema `sameAs`, and it becomes the biggest lever for real reviews/star ratings
 
+## Future ideas — not scheduled, needs your go-ahead
+
+- [ ] **AI chatbot.** Recommended approach: an embeddable third-party widget (e.g. Chatbase, Tidio AI, Intercom Fin) rather than a custom Claude/OpenAI build — this site is static with no backend, so a widget is a one-`<script>`-tag fit, while a custom build would need a new serverless backend just to hide the API key. Benefits: captures after-hours referrer/GP/family enquiries, answers routine funding/service-area questions from existing site content, reduces routine questions reaching Muhe directly, can capture leads before handing off to the referral form. Cost: roughly $20–100+/month depending on vendor. **Two things to decide before building:** budget/vendor, and it must be scoped to non-clinical questions only (services, funding, referral process, hours) — a health provider's chatbot giving anything that reads as clinical advice is a liability. Also needs a line added to the Privacy Policy once live, disclosing chatbot conversation data collection.
+
 ## Ongoing cadence
 
 - **Monthly:** publish a blog post, check Search Console, review the placeholder list above
