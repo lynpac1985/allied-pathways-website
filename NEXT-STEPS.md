@@ -4,9 +4,10 @@ A running checklist of things that need your input or action (not something I ca
 
 **Site status as of today: LIVE at https://alliedpathways.com.au (HTTPS confirmed working).**
 
-## Immediate — one thing is blocking everything below from being visible
+## Immediate — real infrastructure bug, needs a host-level fix
 
-- [ ] **Flush the SiteGround cache.** Every fix and new page listed below is already correctly deployed to the server, but SiteGround's Dynamic Cache is still serving real visitors a stale, pre-2026-09-25 copy of several pages (confirmed via cache-busted requests — origin is correct, cache isn't). This needs your login: **Site Tools → Speed → Caching → Flush Cache**. I tried a `.htaccess` `Cache-Control` override to force this automatically — SiteGround's cache layer ignores it, so a manual flush is the only fix. Do this first; nothing else on this list matters to visitors until it's done.
+- [ ] **The `.htaccess` fixes (canonical host redirect, security headers) only work on the bare homepage URL `/` — every other page bypasses them.** Confirmed independently by 3 separate audit agents plus my own manual check on 2026-09-26. `curl -sI https://alliedpathways.com.au/about.html` still returns 200 with no redirect and no security headers; only `https://www.alliedpathways.com.au/` (root) and genuine 404s get the `.htaccess` treatment. Root cause: SiteGround's nginx layer serves any request matching a real on-disk file directly, bypassing the Apache layer that processes `.htaccess` — this can't be fixed with another `.htaccess` edit. **Fix: Site Tools → Domain → your domain → HTTPS Enforce** (handles the protocol/www redirect at the nginx layer). Security headers on every page may need a SiteGround support ticket, since that's an nginx-level config `.htaccess` can't reach. Don't mark this resolved until `curl -sI` on a real subpage (not just `/`) returns a 301/headers.
+- [x] ~~Flush the SiteGround cache~~ — done, confirmed working as of 2026-09-26 (real visitors now see current content on the `www` host)
 
 ## GitHub & automated check-in — done
 
@@ -25,9 +26,26 @@ A running checklist of things that need your input or action (not something I ca
 - [ ] Click through the live site end to end once the cache is flushed (nav, mobile menu, referral form, footer links, all 6 new pages below)
 - [ ] Verify domain in Google Search Console, submit `sitemap.xml` (now includes the 6 new pages)
 
-## SEO — full audit run 2026-09-25 (claude-seo plugin, 11 sub-agents)
+## SEO — audits run 2026-09-25 and 2026-09-26 (claude-seo plugin, 11 sub-agents each)
 
-Full report: [SEO-AUDIT-2026-09-25.md](SEO-AUDIT-2026-09-25.md). Scored **57/100** at the time — that score predates almost everything below, so treat it as a baseline, not current. Worth re-running `/seo audit` after the cache flush to see where it lands now.
+Full reports: [SEO-AUDIT-2026-09-25.md](SEO-AUDIT-2026-09-25.md), [SEO-AUDIT-2026-09-26.md](SEO-AUDIT-2026-09-26.md). Re-audit results: SXO gap score 43→64 (the discipline-page fix is working directionally), Content Quality 48→61, GEO 52→56. Local SEO score moved 43→37 but that's not a regression — GBP/reviews carry 45% combined weight and are still at zero live signal pending verification.
+
+**Fixed in response to the 09-26 re-audit:**
+- [x] `&amp;` HTML-entity leak in the suburbs page's JSON-LD (was corrupting structured-data parsing)
+- [x] `privacy-policy.html`/`feedback-complaints.html` missing schema fields (areaServed/hours/sameAs)
+- [x] NDIS pricing document renamed to match the NDIA's 2026-27 "Pricing Schedule" naming (dollar figures were already correct)
+- [x] Stopped implying Occupational Therapy is currently staffed on pages other than the OT page itself
+- [x] Toned down unverifiable "most active service area"/"same-day availability" claims on the suburbs page — same class of issue as the testimonials fix
+- [x] Fixed Support at Home funding-flow description and "Improved Daily Living Skills" → correct category name
+- [x] Added non-clinical-content guidance to the testimonial form
+- [x] Fixed dead blog share buttons and an inflated read-time estimate
+- [x] Added Victorian regulator references (Health Complaints Commissioner, Health Records Act) to the legal pages
+- [x] Added footer disclosure that Allied Pathways is a business name of Centre for Care Pty Ltd
+
+**Still open, bigger content work — needs your input on scope before I'd build more:**
+- [ ] Discipline pages are thin vs. real competitors (246–333 words vs. ~1,290-word median) — needs FAQ sections + first-appointment detail per page
+- [ ] **Glen Waverley needs its own dedicated page**, not just a subsection of the consolidated suburbs page — 6 of 9 real search results for that exact query are Glen-Waverley-specific pages (refines, doesn't reverse, the "one consolidated page for everything else" decision)
+- [ ] A "Swallowing & Mealtime Management" page/section linking the Dietitian and Speech Pathology pages — a real differentiator currently invisible to search
 
 **Fixed since the audit:**
 - [x] Removed fabricated homepage testimonials (real legal risk — Health Practitioner Regulation National Law s133 bans testimonials in advertising for AHPRA-regulated services)
