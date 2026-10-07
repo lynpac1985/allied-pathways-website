@@ -77,7 +77,7 @@ Full reports: [SEO-AUDIT-2026-09-25.md](SEO-AUDIT-2026-09-25.md), [SEO-AUDIT-202
 ## Business details to confirm
 
 - [ ] Real business opening hours (currently placeholder Mon-Fri 9am-5pm in the site's structured data)
-- [ ] Google Analytics 4 Measurement ID (`G-XXXXXXXXXX`) — not yet installed. Send the ID and it'll be wired in
+- [x] Google Analytics 4 (`G-NZXDLNYC5L`) installed on all pages 2026-10-07 and confirmed receiving data; Privacy Policy updated to match
 - [ ] Google Business Profile — **set up, awaiting Google's verification** (postcard/phone/email). Once verified, send Claude the profile URL to add to the site's schema `sameAs`, and it becomes the biggest lever for real reviews/star ratings
 
 ## Future ideas — not scheduled, needs your go-ahead
